@@ -1,0 +1,13 @@
+.output-section {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 16px;
+}
+
+@media (max-width: 600px) {
+  .output-section {
+    margin: 16px 0;
+  }
+}
