@@ -35,13 +35,10 @@ const Models: React.FunctionComponent = () => {
     getModels();
   }, []);
 
-  if (error) {
-    return <p>Error: {error.message}</p>;
-  }
-
   return (
     <div className="model-container">
       <h1>Welcome Models Space</h1>
+      {error && <h2 style={{ color: "red" }}>Error: {error.message}</h2>}
       {modelsData.length ? (
         <Box sx={{ flexGrow: 1, padding: 2 }}>
           <Grid container spacing={3}>
